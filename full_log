@@ -1,0 +1,451 @@
+[root@ipa1 freeipa-letsencrypt]# ./setup-le.sh 
+Last metadata expiration check: 0:33:11 ago on Wed 22 Apr 2020 10:05:01 AM EDT.
+Package certbot-1.3.0-1.fc32.noarch is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Installing CA certificate, please wait
+Verified DSTRootCAX3
+CA certificate successfully installed
+The ipa-cacert-manage command was successful
+ipapython.admintool: DEBUG: Not logging to a file
+ipalib.plugable: DEBUG: importing all plugin modules in ipaclient.remote_plugins.schema$9c30fceb...
+ipalib.plugable: DEBUG: importing plugin module ipaclient.remote_plugins.schema$9c30fceb.plugins
+ipalib.plugable: DEBUG: importing all plugin modules in ipaclient.plugins...
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.automember
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.automount
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.ca
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.cert
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.certmap
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.certprofile
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.csrgen
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.dns
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.hbacrule
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.hbactest
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.host
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.idrange
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.internal
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.location
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.migration
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.misc
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.otptoken
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.otptoken_yubikey
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.passwd
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.permission
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.rpcclient
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.server
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.service
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.sudorule
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.topology
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.trust
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.user
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.vault
+ipalib.rpc: DEBUG: failed to find session_cookie in persistent storage for principal 'admin@LAB.<mydomain>.ORG'
+ipalib.rpc: DEBUG: trying https://ipa1.lab.<mydomain>.org/ipa/json
+ipalib.backend: DEBUG: Created connection context.rpcclient_140539019700304
+ipalib.install.kinit: DEBUG: Initializing principal host/ipa1.lab.<mydomain>.org@LAB.<mydomain>.ORG using keytab /etc/krb5.keytab
+ipalib.install.kinit: DEBUG: using ccache /tmp/tmp-687pe4ra/ccache
+ipalib.install.kinit: DEBUG: Attempt 1/1: success
+ipalib.frontend: DEBUG: raw: ca_is_enabled(version='2.107')
+ipalib.frontend: DEBUG: ca_is_enabled(version='2.107')
+ipalib.rpc: DEBUG: [try 1]: Forwarding 'ca_is_enabled/1' to json server 'https://ipa1.lab.<mydomain>.org/ipa/json'
+ipalib.rpc: DEBUG: New HTTP connection (ipa1.lab.<mydomain>.org)
+ipalib.rpc: DEBUG: received Set-Cookie (<class 'list'>)'['ipa_session=MagBearerToken=j6uqPFMJZsJW2oXrumJuE0W7va2cU%2bmAw3c1f9jzprxkDCszG1WXkXwN8Ksq5YUFmLyhZs5okbBaF6vjaNJ61wLsOOIf6C5t6CbdP83y3MkzQ6fACnKJ7sDEeA2U3lNW7PH3%2fJJnH8gSPd3CcWyf9vDoxZH47pJUzrWDvzx5ubMbjZ7tX9xmbAYI5JpV5n76QuRfghgjulv5nCzHOkETevNxq6sBLYB7iv78QZ4a9a8FNXEpHKSnsqCDPSpTE8VzCfv29ZGjv9pU66lT3dqHPQHBRQ47ViM7bVt9BDyTY%2bA%3d;path=/ipa;httponly;secure;']'
+ipalib.rpc: DEBUG: storing cookie 'ipa_session=MagBearerToken=j6uqPFMJZsJW2oXrumJuE0W7va2cU%2bmAw3c1f9jzprxkDCszG1WXkXwN8Ksq5YUFmLyhZs5okbBaF6vjaNJ61wLsOOIf6C5t6CbdP83y3MkzQ6fACnKJ7sDEeA2U3lNW7PH3%2fJJnH8gSPd3CcWyf9vDoxZH47pJUzrWDvzx5ubMbjZ7tX9xmbAYI5JpV5n76QuRfghgjulv5nCzHOkETevNxq6sBLYB7iv78QZ4a9a8FNXEpHKSnsqCDPSpTE8VzCfv29ZGjv9pU66lT3dqHPQHBRQ47ViM7bVt9BDyTY%2bA%3d;' for principal admin@LAB.<mydomain>HOME.ORG
+ipapython.ipaldap: DEBUG: retrieving schema for SchemaCache url=ldap://ipa1.lab.<mydomain>.org:389 conn=<ldap.ldapobject.SimpleLDAPObject object at 0x7fd1ca1fbc70>
+ipalib.frontend: DEBUG: raw: ca_find(None, version='2.236')
+ipalib.frontend: DEBUG: ca_find(None, version='2.236')
+ipalib.rpc: DEBUG: [try 1]: Forwarding 'ca_find/1' to json server 'https://ipa1.lab.<mydomain>.org/ipa/json'
+ipalib.rpc: DEBUG: HTTP connection keep-alive (ipa1.lab.<mydomain>.org)
+ipalib.rpc: DEBUG: received Set-Cookie (<class 'list'>)'['ipa_session=MagBearerToken=2dE5q1PdX2LW%2bBGwm2%2br84t1qRtzk%2bBwjqtEZAebBz2F%2bju5R9vHR3LGcX7wiD4aBBnM7U8b5Rw5yC%2bjZpoUW%2fE9wQtnG%2fyZCnouKheor2RUhm141SUL69efgDU4McljmkhBl7l8U0QRyg97ZgglkQqAZ5dfJ4QrSFyyKevYY4oTiMOdwI1HJr0JzyfYaeqIX1Lz2VZRkjYniPL5qARJmz%2bFvKCSZJXV9oSbHRxcLli4oR%2b3%2ffw1gzmUzFL18vJPt%2bTE5Z%2f9x4TMtP%2b%2bZEzIfEq87lGlXYG1JxGwQCIDEjE%3d;path=/ipa;httponly;secure;']'
+ipalib.rpc: DEBUG: storing cookie 'ipa_session=MagBearerToken=2dE5q1PdX2LW%2bBGwm2%2br84t1qRtzk%2bBwjqtEZAebBz2F%2bju5R9vHR3LGcX7wiD4aBBnM7U8b5Rw5yC%2bjZpoUW%2fE9wQtnG%2fyZCnouKheor2RUhm141SUL69efgDU4McljmkhBl7l8U0QRyg97ZgglkQqAZ5dfJ4QrSFyyKevYY4oTiMOdwI1HJr0JzyfYaeqIX1Lz2VZRkjYniPL5qARJmz%2bFvKCSZJXV9oSbHRxcLli4oR%2b3%2ffw1gzmUzFL18vJPt%2bTE5Z%2f9x4TMtP%2b%2bZEzIfEq87lGlXYG1JxGwQCIDEjE%3d;' for principal admin@LAB.<mydomain>HOME.ORG
+ipalib.install.sysrestore: DEBUG: Loading Index file from '/var/lib/ipa/sysrestore/sysrestore.index'
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-L', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+Certificate Nickname                                         Trust Attributes
+                                                             SSL,S/MIME,JAR/XPI
+
+Server-Cert                                                  u,u,u
+LAB.<mydomain>.ORG IPA CA                                     CT,C,C
+DSTRootCAX3                                                  C,,  
+letsencryptx3                                                C,,  
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-D', '-n', 'LAB.<mydomain>.ORG IPA CA', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-D', '-n', 'DSTRootCAX3', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-D', '-n', 'letsencryptx3', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-A', '-n', 'LAB.<mydomain>.ORG IPA CA', '-t', 'CT,C,C', '-a', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-A', '-n', 'DSTRootCAX3', '-t', 'C,,', '-a', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-A', '-n', 'letsencryptx3', '-t', 'C,,', '-a', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'is-active', 'dirsrv@LAB-<mydomain>-ORG.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=active
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', '--system', 'daemon-reload']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'restart', 'dirsrv@LAB-<mydomain>-ORG.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'is-active', 'dirsrv@LAB-<mydomain>-ORG.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=active
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: wait_for_open_ports: localhost [389] timeout 120
+ipapython.ipautil: DEBUG: waiting for port: 389
+ipapython.ipautil: DEBUG: SUCCESS: port: 389
+ipaplatform.base.services: DEBUG: Restart of dirsrv@LAB-<mydomain>-ORG.service complete
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'is-active', 'httpd.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=active
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'restart', 'httpd.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'is-active', 'httpd.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=reloading
+
+ipapython.ipautil: DEBUG: stderr=
+ipaplatform.base.services: DEBUG: Restart of httpd.service complete
+ipaclient.install.ipa_certupdate: DEBUG: resubmitting certmonger request '20200417032759'
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('GENERATING_CSR', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('PRE_SAVE_CERT', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('POST_SAVED_CERT', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('POST_SAVED_CERT', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('POST_SAVED_CERT', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('MONITORING', variant_level=1)
+ipaclient.install.ipa_certupdate: DEBUG: modifying certmonger request '20200417032759'
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-L', '-n', 'IPA CA', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=255
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=certutil: Could not find cert: IPA CA
+: PR_FILE_NOT_FOUND_ERROR: File not found
+
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-L', '-n', 'External CA cert', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=255
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=certutil: Could not find cert: External CA cert
+: PR_FILE_NOT_FOUND_ERROR: File not found
+
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-L', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+Certificate Nickname                                         Trust Attributes
+                                                             SSL,S/MIME,JAR/XPI
+
+LAB.<mydomain>.ORG IPA CA                                     CT,C,C
+DSTRootCAX3                                                  C,,  
+letsencryptx3                                                C,,  
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-D', '-n', 'LAB.<mydomain>.ORG IPA CA', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-D', '-n', 'DSTRootCAX3', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-D', '-n', 'letsencryptx3', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-A', '-n', 'LAB.<mydomain>.ORG IPA CA', '-t', 'CT,C,C', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-A', '-n', 'DSTRootCAX3', '-t', 'C,,', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-A', '-n', 'letsencryptx3', '-t', 'C,,', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/update-ca-trust']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipaplatform.redhat.tasks: INFO: Systemwide CA database updated.
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/update-ca-trust']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipaplatform.redhat.tasks: INFO: Systemwide CA database updated.
+ipalib.backend: DEBUG: Destroyed connection context.rpcclient_140539019700304
+ipapython.admintool: INFO: The ipa-certupdate command was successful
+Installing CA certificate, please wait
+Verified letsencryptx3
+CA certificate successfully installed
+The ipa-cacert-manage command was successful
+ipapython.admintool: DEBUG: Not logging to a file
+ipalib.plugable: DEBUG: importing all plugin modules in ipaclient.remote_plugins.schema$9c30fceb...
+ipalib.plugable: DEBUG: importing plugin module ipaclient.remote_plugins.schema$9c30fceb.plugins
+ipalib.plugable: DEBUG: importing all plugin modules in ipaclient.plugins...
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.automember
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.automount
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.ca
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.cert
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.certmap
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.certprofile
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.csrgen
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.dns
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.hbacrule
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.hbactest
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.host
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.idrange
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.internal
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.location
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.migration
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.misc
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.otptoken
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.otptoken_yubikey
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.passwd
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.permission
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.rpcclient
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.server
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.service
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.sudorule
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.topology
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.trust
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.user
+ipalib.plugable: DEBUG: importing plugin module ipaclient.plugins.vault
+ipalib.rpc: DEBUG: failed to find session_cookie in persistent storage for principal 'admin@LAB.<mydomain>.ORG'
+ipalib.rpc: DEBUG: trying https://ipa1.lab.<mydomain>.org/ipa/json
+ipalib.backend: DEBUG: Created connection context.rpcclient_140648079648128
+ipalib.install.kinit: DEBUG: Initializing principal host/ipa1.lab.<mydomain>.org@LAB.<mydomain>.ORG using keytab /etc/krb5.keytab
+ipalib.install.kinit: DEBUG: using ccache /tmp/tmp-yddk3tzf/ccache
+ipalib.install.kinit: DEBUG: Attempt 1/1: success
+ipalib.frontend: DEBUG: raw: ca_is_enabled(version='2.107')
+ipalib.frontend: DEBUG: ca_is_enabled(version='2.107')
+ipalib.rpc: DEBUG: [try 1]: Forwarding 'ca_is_enabled/1' to json server 'https://ipa1.lab.<mydomain>.org/ipa/json'
+ipalib.rpc: DEBUG: New HTTP connection (ipa1.lab.<mydomain>.org)
+ipalib.rpc: DEBUG: received Set-Cookie (<class 'list'>)'['ipa_session=MagBearerToken=pUZLYxIUqbbVs4UOAhEdGCu8%2fQc%2f6EzJ2jgiDpP4gi5%2bFsSuFd7WhtnK3HJiq2HimI5dszFcvH9OoYnXtRSHVBMlKmxvrT3Li48Pjenou0ChmxUDSSUS61TwgDC1wCwXBUEUxNfY%2fs9QZEpiWdK1MXNZGfvs5%2bSh9niaurmqEJ%2bUamDYZ%2bBDI9WeWCpgybF46GL7%2bGS1Czp3nXkaOCs657sfgRFCAVaKctX%2fqjQKaXqo050JFRaAM9Z0AEcuLSgd66h6R7GEEecaL1RDBR9tgiQuc91aAYh98VvWPbuvvRU%3d;path=/ipa;httponly;secure;']'
+ipalib.rpc: DEBUG: storing cookie 'ipa_session=MagBearerToken=pUZLYxIUqbbVs4UOAhEdGCu8%2fQc%2f6EzJ2jgiDpP4gi5%2bFsSuFd7WhtnK3HJiq2HimI5dszFcvH9OoYnXtRSHVBMlKmxvrT3Li48Pjenou0ChmxUDSSUS61TwgDC1wCwXBUEUxNfY%2fs9QZEpiWdK1MXNZGfvs5%2bSh9niaurmqEJ%2bUamDYZ%2bBDI9WeWCpgybF46GL7%2bGS1Czp3nXkaOCs657sfgRFCAVaKctX%2fqjQKaXqo050JFRaAM9Z0AEcuLSgd66h6R7GEEecaL1RDBR9tgiQuc91aAYh98VvWPbuvvRU%3d;' for principal admin@LAB.FLYNNHOME.ORG
+ipapython.ipaldap: DEBUG: retrieving schema for SchemaCache url=ldap://ipa1.lab.<mydomain>.org:389 conn=<ldap.ldapobject.SimpleLDAPObject object at 0x7feb2e9a07c0>
+ipalib.frontend: DEBUG: raw: ca_find(None, version='2.236')
+ipalib.frontend: DEBUG: ca_find(None, version='2.236')
+ipalib.rpc: DEBUG: [try 1]: Forwarding 'ca_find/1' to json server 'https://ipa1.lab.<mydomain>.org/ipa/json'
+ipalib.rpc: DEBUG: HTTP connection keep-alive (ipa1.lab.<mydomain>.org)
+ipalib.rpc: DEBUG: received Set-Cookie (<class 'list'>)'['ipa_session=MagBearerToken=PDkpU%2fOUr1hgaKGog2PgYOg0LtNm2l1eeJ4jKO%2bNpFvx5Q5U0Y7lfIR5CPCiIrulVNaWMH02ShVvTYCH1GBw2C2GfzMzzV%2bpfGBzb1jwy6UieOLyElaPWh2OQPts%2b1IjNNpSYvQVZ2uIM%2bTOJ9YhxAXQDzjhx%2bHl1jzR5UzD4hIa%2fB6znlYg1dy%2bufNujpHpIpf9vXhjwYaYmXjo38qLUqzNuXKrmIW1vw4Q2op2Ugcfb32zHv9Z%2f6rfnnTUuXsjMUafSLga2gyjfNNb3r1uElOfrxlbaW%2f96aNL8UdNeTo%3d;path=/ipa;httponly;secure;']'
+ipalib.rpc: DEBUG: storing cookie 'ipa_session=MagBearerToken=PDkpU%2fOUr1hgaKGog2PgYOg0LtNm2l1eeJ4jKO%2bNpFvx5Q5U0Y7lfIR5CPCiIrulVNaWMH02ShVvTYCH1GBw2C2GfzMzzV%2bpfGBzb1jwy6UieOLyElaPWh2OQPts%2b1IjNNpSYvQVZ2uIM%2bTOJ9YhxAXQDzjhx%2bHl1jzR5UzD4hIa%2fB6znlYg1dy%2bufNujpHpIpf9vXhjwYaYmXjo38qLUqzNuXKrmIW1vw4Q2op2Ugcfb32zHv9Z%2f6rfnnTUuXsjMUafSLga2gyjfNNb3r1uElOfrxlbaW%2f96aNL8UdNeTo%3d;' for principal admin@LAB.FLYNNHOME.ORG
+ipalib.install.sysrestore: DEBUG: Loading Index file from '/var/lib/ipa/sysrestore/sysrestore.index'
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-L', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+Certificate Nickname                                         Trust Attributes
+                                                             SSL,S/MIME,JAR/XPI
+
+Server-Cert                                                  u,u,u
+LAB.<mydomain>.ORG IPA CA                                     CT,C,C
+DSTRootCAX3                                                  C,,  
+letsencryptx3                                                C,,  
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-D', '-n', 'LAB.<mydomain>.ORG IPA CA', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-D', '-n', 'DSTRootCAX3', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-D', '-n', 'letsencryptx3', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-A', '-n', 'LAB.<mydomain>.ORG IPA CA', '-t', 'CT,C,C', '-a', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-A', '-n', 'DSTRootCAX3', '-t', 'C,,', '-a', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/dirsrv/slapd-LAB-<mydomain>-ORG', '-A', '-n', 'letsencryptx3', '-t', 'C,,', '-a', '-f', '/etc/dirsrv/slapd-LAB-<mydomain>-ORG/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'is-active', 'dirsrv@LAB-<mydomain>-ORG.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=active
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', '--system', 'daemon-reload']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'restart', 'dirsrv@LAB-<mydomain>-ORG.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'is-active', 'dirsrv@LAB-<mydomain>-ORG.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=active
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: wait_for_open_ports: localhost [389] timeout 120
+ipapython.ipautil: DEBUG: waiting for port: 389
+ipapython.ipautil: DEBUG: SUCCESS: port: 389
+ipaplatform.base.services: DEBUG: Restart of dirsrv@LAB-<mydomain>-ORG.service complete
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'is-active', 'httpd.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=active
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'restart', 'httpd.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/bin/systemctl', 'is-active', 'httpd.service']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=active
+
+ipapython.ipautil: DEBUG: stderr=
+ipaplatform.base.services: DEBUG: Restart of httpd.service complete
+ipaclient.install.ipa_certupdate: DEBUG: resubmitting certmonger request '20200417032759'
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('GENERATING_CSR', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('PRE_SAVE_CERT', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('POST_SAVED_CERT', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('POST_SAVED_CERT', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('POST_SAVED_CERT', variant_level=1)
+ipalib.install.certmonger: DEBUG: certmonger request is in state dbus.String('MONITORING', variant_level=1)
+ipaclient.install.ipa_certupdate: DEBUG: modifying certmonger request '20200417032759'
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-L', '-n', 'IPA CA', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=255
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=certutil: Could not find cert: IPA CA
+: PR_FILE_NOT_FOUND_ERROR: File not found
+
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-L', '-n', 'External CA cert', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=255
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=certutil: Could not find cert: External CA cert
+: PR_FILE_NOT_FOUND_ERROR: File not found
+
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-L', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+Certificate Nickname                                         Trust Attributes
+                                                             SSL,S/MIME,JAR/XPI
+
+LAB.<mydomain>.ORG IPA CA                                     CT,C,C
+DSTRootCAX3                                                  C,,  
+letsencryptx3                                                C,,  
+
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-D', '-n', 'LAB.<mydomain>.ORG IPA CA', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-D', '-n', 'DSTRootCAX3', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-D', '-n', 'letsencryptx3', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-A', '-n', 'LAB.<mydomain>.ORG IPA CA', '-t', 'CT,C,C', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-A', '-n', 'DSTRootCAX3', '-t', 'C,,', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/certutil', '-d', 'sql:/etc/ipa/nssdb', '-A', '-n', 'letsencryptx3', '-t', 'C,,', '-a', '-f', '/etc/ipa/nssdb/pwdfile.txt']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/update-ca-trust']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipaplatform.redhat.tasks: INFO: Systemwide CA database updated.
+ipapython.ipautil: DEBUG: Starting external process
+ipapython.ipautil: DEBUG: args=['/usr/bin/update-ca-trust']
+ipapython.ipautil: DEBUG: Process finished, return code=0
+ipapython.ipautil: DEBUG: stdout=
+ipapython.ipautil: DEBUG: stderr=
+ipaplatform.redhat.tasks: INFO: Systemwide CA database updated.
+ipalib.backend: DEBUG: Destroyed connection context.rpcclient_140648079648128
+ipapython.admintool: INFO: The ipa-certupdate command was successful
+certutil: could not authenticate to token NSS Certificate DB.: SEC_ERROR_IO: An I/O error occurred during security authorization.
+certutil: Server-Cert is neither a key-type nor a nickname nor a key-id: SEC_ERROR_IO: An I/O error occurred during security authorization.
+[root@ipa1 freeipa-letsencrypt]# 
